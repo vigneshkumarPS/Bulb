@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title> Js Bulb</title>
+    <link rel="Stylesheet" href="bulb.css">
+</head>
+<body>
+    
+    <center>
+        <img id="myImage" onclick="changeImage()"src="pic_bulboff.gif" width="100" height="180">
+    </center>
+    <h1 style="color:black;"> <b>ABOUT BULB</b></h1>
+    <h3><p style="color:darkslategray"> => An electronic bulb is a small and simple light source that uses a wire filament to glow on the application of electricity.<br> => The structure of incandescent light bulbs is shown in the figure below.<br> => The light bulb consists of three key parts. The filament. The glass bulb.</h3>
+        <h1><p style="color:black;">TYPES OF BULB</p></h1>
+        <ul>
+            <h3 style="color:rgb(41, 70, 70);"><li>Fluorescent</li>
+            <li>Light-Emitting Diode</li>
+            <li>Compact Fluorescent</li>
+            <li>Halogen</li>
+            <li>Sodium Vapor Lamps</li>
+            <li>Mercury Vapor Lamps</li>
+            <li>Smart Lightbulbs</li></h3>
+            </ul>
+            <h1><p style="color:black;">HISTORY OF BULB</p></h1>
+            <h3><p style="color:rgb(22, 46, 46)"> =><b><u>Humphry Davy, an English chemist</u></b>, invented the first electric light in<u> 1802</u>.<br>=> After experimenting with electricity, he invented an electric battery which, when he connected wires to the battery and a piece of carbon, made the carbon glow and produce light.</h3>    
+
+        <script>
+            function changeImage(){
+                var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "pic_bulboff.gif";
+  } else {
+    image.src = "pic_bulbon (1).gif";
+  }
+            }
+        </script>
+
+</body>
+</html>
